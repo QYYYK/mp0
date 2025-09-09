@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Card</title>
-  
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-  <div class="card">
-    <img src="./assets/Photo.jpg" alt="Profile Photo" class="profile-img">
-    <h1>Yukun Quan</h1>
-    <p class="email">yukunq2@illinois.edu</p>
-    <p>
-      Hi everyone! My name is Yukun Quan. You can call me Yukun. 
-      This semester is my third one at UIUC. I enjoy sports, 
-      especially playing basketball, and I also love traveling and music. 
-      I hope that my future career will be something I truly love. 
-      I'm very glad to meet you all!
-    </p>
-    <a href="https://github.com/QYYYK" target="_blank">My GitHub Profile</a>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yukun Quan – Introduction Card</title>
+
+    <!-- For GitHub Pages (static) -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <article class="card" role="region" aria-label="Profile card">
+        <img
+          class="avatar"
+          src="./assets/Photo.jpg"
+          alt="Photo of Yukun Quan"
+        />
+
+        <h1 class="name">Yukun Quan</h1>
+        <p class="email">yukunq2@illinois.edu</p>
+
+        <p class="bio">
+          Hi everyone! My name is Yukun Quan. You can call me Yukun. This
+          semester is my third one at UIUC. I enjoy sports, especially playing
+          basketball, and I also love traveling and music. I hope that my future
+          career will be something I truly love. I'm very glad to meet you all!
+        </p>
+
+        <p class="link-row">
+          <a class="gh-link" href="https://github.com/qyyyk" target="_blank" rel="noopener">
+            My GitHub Profile
+          </a>
+        </p>
+      </article>
+    </main>
+
+    <!-- For local dev only (webpack-dev-server will inject CSS via JS) -->
+    <script src="/bundle.js"></script>
+  </body>
 </html>
