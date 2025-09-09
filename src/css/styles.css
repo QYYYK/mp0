@@ -1,5 +1,5 @@
 :root {
-  --card-bg: #dfe9ff;       /* slightly deeper pale blue */
+  --card-bg: #dfe9ff;
   --text: #0f172a;
   --muted: #475569;
   --shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
@@ -8,9 +8,7 @@
 
 * { box-sizing: border-box; }
 
-html, body {
-  height: 100%;
-}
+html, body { height: 100%; }
 
 body {
   margin: 0;
@@ -35,14 +33,14 @@ body {
   border-radius: var(--radius);
   padding: 48px 48px 40px;
   box-shadow: var(--shadow);
-  text-align: center;
+  text-align: center; /* 标题/邮箱/按钮继续居中 */
 }
 
 .avatar {
-  width: 150px;             /* assignment requirement */
-  height: 150px;            /* assignment requirement */
+  width: 150px;             
+  height: 150px;            
   object-fit: cover;
-  border-radius: 8px;       /* square (not a circle) with mild rounding */
+  border-radius: 8px;       
   display: block;
   margin: 0 auto 20px;
 }
@@ -64,12 +62,13 @@ body {
   margin: 0 auto 28px;
   max-width: 72ch;
   font-size: clamp(16px, 2.2vw, 20px);
+  text-align: left;
 }
 
 .link-row { margin: 0; }
 
 .gh-link {
-  color: #000;              /* black text */
+  color: #000;
   text-decoration: underline;
   text-underline-offset: 3px;
   font-weight: 600;
